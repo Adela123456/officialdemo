@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="blgroup-scloud-common-1.0.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../stablefile/repository/com/bailian/scloud/blgroup-scloud-common/1.0.0-SNAPSHOT/blgroup-scloud-common-1.0.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
