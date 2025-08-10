@@ -19,6 +19,9 @@ public class MyReentrantLock {
     public synchronized  void lock() throws InterruptedException {
         // 我首先要判断是不是一个线程。。。，怎么判断呢，  第一次请求就把当前线程赋给owner，后面再来的请求和owner作对比，就知道是不是自己了
         // 这个wait和notify都是针对一个对象做的，是不同的线程对一个对象的操作。。。 一个线程等待，另一个叫醒他
+        /**
+         * 这个地方，我第一次写的时候完全没注意到我写的是while，不是if
+         */
         while (isLocked && owner != Thread.currentThread()) {
             System.out.println(Thread.currentThread().getName() + "等待中......");
             wait(); // 等待别人释放锁（但如果是自己持有就永远等不到）
